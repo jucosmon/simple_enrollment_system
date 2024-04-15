@@ -34,3 +34,15 @@ body {
 .nav-covered-area {
     margin-top: 5%;
 }
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+.custom-form {
+    width: 60%;
+}

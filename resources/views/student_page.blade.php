@@ -5,6 +5,9 @@
 @section('content')
     <div class="container py-4 nav-covered-area">
         <h1 class="text-center mb-3">Manage Students</h1>
+        <div class="d-flex justify-content-end mb-3">
+            <a href="add-student-page" class="btn btn-primary">Add Student</a>
+        </div>
         <table class="table table-striped table-bordered table-hover mx-auto">
             <thead class="thead-dark">
                 <tr>
@@ -19,7 +22,7 @@
             <tbody>
                 @foreach ($students as $student)
                     <tr>
-                        <td>{{ $student['id'] }}</td>
+                        <td>{{ $student['student_id'] }}</td>
                         <td>{{ $student['name'] }}</td>
                         <td>{{ $student['course'] }} {{ $student['year'] }}</td>
                         <td>{{ $student['age'] }}</td>

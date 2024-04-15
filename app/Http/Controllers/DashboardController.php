@@ -7,22 +7,8 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index(){
-        $users = [
-            [
-                'name' => 'Zaki',
-                'age' => 20
-            ],
-            [
-                'name' => 'Luffy',
-                'age' => 19
-            ]
-            ];
-        return view(
-            'dashboard',
-            [
-                'users' => $users
-            ]
-        );
+
+        return view('dashboard');
     }
 }
 # Rezelle June Udtohan & Jelah Marie Dango
